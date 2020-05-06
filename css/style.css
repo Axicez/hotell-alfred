@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgba(228, 198, 30, 0.829);
+    font-family: 'Great Vibes', cursive;
+}
+
+
+header h1{
+    grid-column: 3;
+    margin: auto;
+    font-size: 40px;
+}
+
+header img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#start_pc{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#start_pc div{
+    display: block;
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+
+    border-radius: 15px;
+}
+
+#start_pc img{
+    display: block;
+    margin: auto;
+
+    border-radius: 15px;
+}
+
+#start_mobile{
+    display: block;
+    margin: auto;
+
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#start_mobile img{
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+footer{
+    text-align: center;
+    background-color: turquoise;
+    position: sticky;
+    bottom: 0;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.topnav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: tomato;
+}
+
+.navitem{
+    text-align: center;
+    padding: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav_start{
+    grid-column: 1;
+}
+
+.navitem:focus{
+    background-color: teal;
+}
+
+.navitem:hover{
+    background-color: cyan;
+}
+
+#nav_boka{
+    grid-column: 2;
+}
+
+#nav_hitta{
+    grid-column: 3;
+}
+
+#nav_kontakta{
+    grid-column: 4;
+}
+.start_text{
+    background-color: yellowgreen;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 50ch;
+}
+
+#start_text_mobile{
+    padding: 25px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #6b818df3;
+    padding: 20px;
+    max-width: 50%;
+    display: block;
+    margin: 30px auto;
+}
+
+* {box-sizing:border-box}
+
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.map {
+    margin: 20px;
+    padding: 5px;
+    border-style: solid;
+    
+}
+
+#bokform {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.mobile_margin {
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.contact {
+    display: block;
+    
+    background-color: #4caf50;
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.triangeln {
+    display: block;
+    
+    background-color: #4caf50;
+    width: 40%;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.grid_boka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#clock {
+    grid-column: 5;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+}
+
+#kontakt_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#framsida {
+    width: 100%;
+    height: auto;
+}
+
+#karta {
+    width: 100%;
+    height: 450px;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0em;
+    }
+    #bokform {
+        font-size: 15px;
+    }
+    #clock{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1fr 3fr 4fr;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    #start_pc{
+        display: grid;
+    }
+
+    #start_mobile{
+        display: none;
+    }
+
+    .topnav{
+        grid-template-columns: 1fr 1fr 1fr 1fr 7fr;
+    }
+}

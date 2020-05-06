@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <title>Bright Hotell</title>
+</head>
+<body>
+    <header>
+        <img src="img/logga_bright.png" alt="logga"  style="width: 150px;">
+        <h1>Bright Hotell</h1>
+        <div id="clock" >
+
+        </div>
+    </header>
+
+    <div class="topnav">
+        <a class="navitem" id="nav_start"  href="index.html">Start</a>
+        <a class="navitem" id="nav_boka" href="boka.html">Boka</a>
+        <a class="navitem" id="nav_hitta" href="hitta.html">Hitta</a>
+        <a class="navitem" id="nav_kontakta" href="kontakta.html">Kontakta</a>
+    </div>
+
+    <div class="container">
+        <div id="bokform">
+            <h1>Bokningsformulär</h1>
+        </div>
+        <form action="index.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Förnamn</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Skriv ditt förnamn..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Efternamn</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Skriv ditt efternamn.."> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label id="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mail" name="email" placeholder="Skriv din mail..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nummer">Telefonnummer</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nummer" name="Telefonnummer" placeholder="Skriv ditt telefonnummer..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label id="rum">Rumstyp</label>
+                </div>
+                <div class="col-75">
+                    <select>
+                        <option value="enkelrum">Enkelrum</option>
+                        <option value="dubbelrum">Dubbelrum</option>
+                        <option value="familjerum">Familjerum</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Övrigt</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Övrig information.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+   
+    <footer>
+        <p>Bright Hotell | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
+    </footer>
+</body>
+</html>
